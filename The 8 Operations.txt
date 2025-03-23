@@ -1,0 +1,46 @@
+1-post
+http://127.0.0.1:5000/signup
+{
+  "name": "Omar Magdy",
+  "username": "Omar",
+  "password": "omar123"
+}
+2-
+http://127.0.0.1:5000/login
+{
+  "username": "omar",
+  "password": "omar123"
+}
+3-put
+http://127.0.0.1:5000/users/1
+{
+  "name": "Omar magdy",
+  "username": "omar"
+}
+------------------
+1-post
+http://127.0.0.1:5000/products
+{
+  "pname": "My_Laptop",
+  "description": "Expensive Laptop",
+  "price": 1900,
+  "stock": 40
+}
+
+2- get
+http://127.0.0.1:5000/products
+
+3-get
+http://127.0.0.1:5000/products/1
+
+4-put
+http://127.0.0.1:5000/products/1
+{
+  "pname": "The Updated PC",
+  "description": "Updated PC",
+  "price": 1900,
+  "stock": 40
+}
+
+5-delete
+http://127.0.0.1:5000/products/1
